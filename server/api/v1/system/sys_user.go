@@ -460,3 +460,14 @@ func (b *BaseApi) ResetPassword(c *gin.Context) {
 	}
 	response.OkWithMessage("重置成功", c)
 }
+
+func (b *BaseApi) GetAgentTest(c *gin.Context) {
+
+	response.OkWithMessage("GetAgentTest", c)
+}
+
+func (b *BaseApi) PostAgentTest(c *gin.Context) {
+
+	response.OkWithMessage("PostAgentTest", c)
+}
+
