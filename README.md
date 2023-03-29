@@ -60,7 +60,7 @@ gin-vue-admin\wechat_tool_agent\pages\index\index.vue 16行
 
 ## 5 编译运行小程序
 无需操作，运行后，自动访问后端agent接口
-## 4 查看后端日志可看到错误
+## 6 查看后端日志可看到错误
 ```
 2023/03/29 20:54:59 D:/项目代码/www/temp/gin-vue-admin/server/service/system/sys_operation_record.go:19 Error 1406: Data too long for column 'agent' at row 1
 [86.453ms] [rows:0] INSERT INTO `sys_operation_records` (`created_at`,`updated_at`,`deleted_at`,`ip`,`method`,`path`,`status`,`latency`,`agent`,`error_message`,`body`,`resp`,`user_id`) VALUES ('2023-03-29 20:54:59.2','2023-03-29 20:54:59.2',NULL,'127.0.0.1','GET','/user/agent',200,0,'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.3 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1 wechatdevtools/1.06.2303060 MicroMessenger/8.0.5 Language/zh_CN webview/','','{}','{"code":0,"data":{},"msg":"GetAgentTest"}',1)
@@ -121,7 +121,9 @@ utf8mb4_general_ci
 
 ## 5 初始化项目填入数据库信息
 
-## 6 编写微信小程序
+## 6 为普通用户（默认的amdin账号）增加测试api权限
+
+## 7 编写微信小程序
 使用了uni-api，仅仅引入最简单的helloworld模板
 在wechat_tool_agent\pages\index.vue中写入
 ```
